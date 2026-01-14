@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Circle</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        .container{
+            height: 300px;
+            width: 100%;
+            border: 2px solid black;
+            position: relative;
+            background-color: lightgray;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            top: 110px;
+            animation: moveBox 2s linear infinite alternate;
+        }
+        @keyframes moveBox{
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="box"></div>
+</div>
+</body>
+</html>
